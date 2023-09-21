@@ -1,0 +1,153 @@
+@import 'fonts.css';
+
+:root {
+    --color-primary: #16161a;
+    --color-secondary: #FF3737;
+}
+
+body {
+    font-family: 'custom-bold';
+    background-image: url('./resources/img/bg.png');
+}
+
+h1 {
+    margin-top: 5rem;
+    font-size: 75px;
+}
+
+.custom-navbar {
+    font-size: x-small;
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    /* background-color: rgb(22, 22, 26,0.4); */
+    background: linear-gradient(to bottom, rgb(0, 0, 0, .8) 0.5%, rgb(0, 0, 0, .3) 100%);
+    padding: 0;
+}
+
+.custom-navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.custom-navbar a:hover {
+    transform: scale(1.01);
+    transition-duration: .25s;
+}
+
+.bg-custom-primary {
+    background-color: var(--color-primary);
+}
+
+.custom-player {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 600px;
+}
+
+.custom-licenses :hover {
+    transform: scale(1.02);
+    transition-duration: .25s;
+
+}
+
+
+.custom-license {
+    border-radius: 30px;
+    background-color: black;
+    width: fit-content;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+    min-width: 230px;
+
+}
+
+.custom-license :hover {
+    transform: scale(1);
+}
+
+.custom-popular {
+    background-color: var(--color-secondary);
+    color: black;
+    font-weight: bold;
+
+}
+
+.custom-license ul {
+    padding-left: 0;
+    margin-bottom: 2rem;
+}
+
+.custom-license li {
+    font-size: x-small;
+}
+
+.custom-license button {
+    background-color: white;
+    margin-bottom: .5rem;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: .3rem;
+}
+
+.custom-pack {
+    margin: .1rem;
+}
+
+.custom-footer {
+    margin: 0;
+    background-color: rgb(0, 0, 0, 0.6)
+}
+
+.custom-footer form {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.custom-footer form input,
+.custom-footer form textarea {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: rgb(0, 0, 0, 0);
+    margin-bottom: 1.5rem;
+    color: white;
+    width: 100%;
+}
+
+.custom-footer form input:focus,
+.custom-footer form textarea:focus {
+    outline: none;
+}
+
+.custom-footer ::placeholder {
+    color: white;
+}
+
+
+.custom-footer form button {
+    align-self: flex-end;
+    width: fit-content;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.custom-footer a {
+    color: white;
+}
+
+.logo {
+    width: 50px;
+}
